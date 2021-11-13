@@ -17,3 +17,7 @@ A python package for secret coding
   
   Func:
   1- Func of CirMap
+      CirxData(col,Num)
+      ----For filling a list for a CirMap's Blank elements/area
+          col : is one CirMap's attribute CirMap.col , a list with column number of every row of the CirMap 
+          Num : an element,can be chr,int,float or any other class/type.The result return will fill with this element-Num
