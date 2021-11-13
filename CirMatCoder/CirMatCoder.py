@@ -270,6 +270,9 @@ def MatMapping(data: list, D: int, H: int, p=[1,1], x=[0]):
                 for colobj in self.mat[row]:
                     r.append(colobj)
             return r
+            if self.model =='Debug':
+                print(r)
+            return r
         def Show(self):
             print('\033[1:30m —————————————————————Mat————————————————————— \033[0m')
             for row in range(self.H):
@@ -356,7 +359,7 @@ def CirMapping(data: list, D: int, d=1, p=[1,1], x=[0]):
             for colNum in self.col:
                 TNum += colNum
             return TNum
-        def AngelGet(self,angle:float):
+        def AngleGet(self,angle:float):
             r=[]
             for n in range(math.ceil(self.r)):
                 py = int(self.r - math.sin(angle) * n * self.d)
@@ -391,6 +394,8 @@ def CirMapping(data: list, D: int, d=1, p=[1,1], x=[0]):
         def LR(self):
             for row in self.row:
                 row.reverse()
+            if self.model == 'Debug':
+                self.ShowCir()
             if self.model == 'Debug':
                 self.ShowCir()
         def Rotate(self):
