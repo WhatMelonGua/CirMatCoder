@@ -91,7 +91,7 @@ A python package for secret coding or some operation for a round shape object -<
             return list for Blank 'x'
 
   StrRow(row)
-      ----For CirMap.ShowCir(),the yellow light row number,1 turn to 001,99 turn to 099,100 keep it self.
+      ----For CirMap.ShowCir(),the yellow highlight row number,1 turn to 001,99 turn to 099,100 keep it self.
             row : the row number, a int type.
             return a char,or str len 1
   
