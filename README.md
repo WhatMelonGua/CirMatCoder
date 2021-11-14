@@ -35,7 +35,7 @@ A python package for secret coding or some operation for a round shape object -<
       return a list fill with the elements in the vector of CirMap
 
   .AngleSet(angle,set: list)       !-express angle like pi/6,not 60°
-      ----Discover elements in line of the vector(the same compute form of AngleGet) with set list input
+      ----Cover elements in line of the vector(the same compute form of AngleGet) with set list input
       no return,change the CirMap.cir
  
   .Line()
